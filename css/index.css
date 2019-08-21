@@ -1,0 +1,276 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+display: block;
+}
+body {
+line-height: 1;
+}
+ol, ul { 
+list-style: none;
+}
+blockquote, q {
+quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+content: '';
+content: none;
+}
+table {
+border-collapse: collapse;
+border-spacing: 0;
+font-weight: 800;
+}
+a {
+color: inherit;
+text-decoration: none;
+}
+body {
+background: rgb(240, 240, 240);
+font-family: "PingFang SC", "Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "Hiragino Sans GB", "Source Han Sans CN Normal", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif;
+font-size: 14px;
+color: #444;
+}
+select {
+    border-color: #eee;
+}
+/* 内容区开始 */
+.information{
+    width: 100%;
+    overflow: hidden;
+    min-width: 1200px;
+    margin: 30px 0 50px;
+}
+.information-jz{
+    width: 1200px;
+    margin:  0 auto;
+    background-color: #fff;
+    overflow: hidden;
+}
+.information-bz{
+    width: 995px;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 20px 0 25px;
+}
+.information-cont{
+    padding: 0 20px;
+    overflow: hidden;
+}
+.information-cont-tit{
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.receivingInformation,.distribution,.methodPayment,.giftList,.computingInformation{
+    width: 100%;
+    /* height: 240px; */
+    border: 1px solid rgb(240, 240, 240);
+}
+.receivingInformation-tit-gy{
+    height: 50px;
+    background-color: rgb(240, 240, 240);
+    line-height: 50px;
+    padding-left: 10px;
+}
+.receivingInformation-tit-gy span:first-child{
+    font-size: 18px;
+    font-weight: 700;
+}
+.receivingInformation-tit-gy span:last-child{
+    font-size: 18px;
+    color: rgb(233, 43, 43);
+    font-weight: 900;
+    margin-left: 20px;
+    cursor:pointer;
+}
+.form-group {
+    float: left;
+}
+.form-control {
+    width: 98px;
+    height: 36px;
+    margin-right: 10px;
+}
+.receivingInformation-inp{
+    width: 315px;
+}
+.receivingInformation-z,.distribution-inp{
+    overflow: hidden;
+    padding: 20px 0 20px 50px;
+    position: relative;
+}
+.receivingInformation-btn,.distribution-btn,.methodPayment-btn{
+    width: 100px;
+    height: 30px;
+    border: 1px solid rgb(233, 43, 43);
+    line-height: 30px;
+    text-align: center;
+    color: rgb(233, 43, 43);
+    font-size: 16px;
+    border-radius: 20px;
+    position: absolute;
+    left: 570px;
+    cursor:pointer;
+}
+.receivingInformation-btn{
+    top: 110px;
+}
+.distribution-btn,.methodPayment-btn{
+    top: 24px;
+}
+.distribution-xl{
+    width: 305px;
+    height: 36px;
+    padding-left: 10px;
+}
+.distribution,.methodPayment,.giftList,.computingInformation{
+    margin-top: 20px;
+}
+.giftList-cont{
+    overflow: hidden;
+    padding: 30px;
+}
+.giftList-cont-tit{
+    padding:0 10px 15px 10px;
+    border-bottom: 2px solid rgb(240, 240, 240);
+}
+.giftList-cont-tit span{
+    display: inline-block;
+    color: rgb(211, 211, 211);
+}
+.giftList-z span{
+    display: inline-block;
+}
+.giftList-cont-tit span:first-child,.giftList-z span:first-child{
+    width: 40%;
+}
+.giftList-cont-tit span:nth-child(2),.giftList-z span:nth-child(2){
+    width: 20%;
+}
+.giftList-cont-tit span:nth-child(3),.giftList-z span:nth-child(3){
+    width: 20%;
+}
+.giftList-cont-tit span:last-child,.giftList-z span:last-child{
+    width: 15%;
+}
+.giftList-z{
+    padding:20px 10px;
+    border-bottom: 1px solid rgb(240, 240, 240);
+}
+.giftList-con-b li:last-child{
+    border-bottom:none
+}
+.computingInformation-con{
+    overflow: hidden;
+}
+.computingInformation-left,.computingInformation-right{
+    float: left;
+    width: 50%;
+}
+.computingInformation-left ul{
+    padding: 22px 28px 37px;
+}
+.computingInformation-list{
+    overflow: hidden;
+    padding:15px 0;
+    border-bottom: 1px solid rgb(240, 240, 240);
+}
+.computingInformation-list span:first-child{
+    width: 104px;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: right;
+    margin-right: 10px;
+}
+.computingInformation-list span:last-child{
+    font-size: 16px;
+}
+.computingInformation-list .wby-z{
+    width: 400px;
+    float: left;
+    height: 110px;
+    font-size: 14px;
+}
+.computingInformation-right{
+    background-color: rgb(255, 245, 245);
+}
+.computingInformation-z{
+    overflow: hidden;
+    padding: 65px 0 56px;
+    display: flex;  
+    flex-flow: row wrap;
+    font-weight: bold;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 200;
+}
+.computingInformation-z > * {
+    flex: 1 100%;
+    margin-bottom: 36px;
+}
+.computingInformation-l span:first-child,.computingInformation-d span:first-child,.computingInformation-c span:first-child{
+    width: 120px;
+    text-align: right;
+    display: inline-block;
+    margin-right: 20px;
+}
+.computingInformation-l span:last-child,.computingInformation-c span:last-child{
+    color: rgb(233, 43, 43);
+}
+.computingInformation-l span:last-child i{
+    margin-right: 3px;
+}
+.computingInformation-c span:last-child{
+    font-size: 30px;
+    position: absolute;
+    top: -8px;
+    right: 177px;
+}
+.computingInformation-c span:first-child{
+    position: relative;
+    left: -18px;
+}
+.computingInformation-c{
+    position: relative;
+}
+.computingInformation-c span:last-child i{
+    font-size: 24px;
+    margin-right: 3px;
+}
+.computingInformation-btn p{
+    width: 300px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 20px;
+    background-color: rgb(233, 43, 43);
+    color: #fff;
+    margin: 0 auto;
+    cursor:pointer;
+}
+.computingInformation{
+    margin-bottom: 58px;
+}
+/* 内容区结束 */

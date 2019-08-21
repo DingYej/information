@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>填写信息</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/layui/css/layui.css">
+</head>
+
+<body>
+    <div class="information">
+        <div class="information-jz">
+            <div class="information-bz">
+                <img src="./images/bz-1.png" alt="">
+            </div>
+            <div class="information-cont">
+                <p class="information-cont-tit">填写和提交订单信息</p>
+                <div class="receivingInformation">
+                    <div class="receivingInformation-tit-gy">
+                        <span>收货信息</span><span>修改</span>
+                    </div>
+                    <div class="receivingInformation-z">
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">收货地区:</label>
+                            <div data-toggle="distpicker">
+                                <div class="form-group">
+                                    <select class="form-control" id="province1"></select>
+                                </div>
+                                <div class="form-group">
+                                    <select class="form-control" id="city1"></select>
+                                </div>
+                                <div class="form-group">
+                                    <select class="form-control" id="district1"></select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">收货地址:</label>
+                            <div class="layui-input-block receivingInformation-inp">
+                                <input type="text" name="title" lay-verify="title" autocomplete="off"
+                                    placeholder="请输入详细地址" class="layui-input">
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">收货人姓名:</label>
+                            <div class="layui-input-block receivingInformation-inp">
+                                <input type="text" name="title" lay-verify="title" autocomplete="off"
+                                    placeholder="请输入姓名" class="layui-input">
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">手机号:</label>
+                            <div class="layui-input-block receivingInformation-inp">
+                                <input type="text" name="title" lay-verify="title" autocomplete="off"
+                                    placeholder="请输入手机号" class="layui-input">
+                            </div>
+                        </div>
+                        <div class="receivingInformation-btn">确定</div>
+                    </div>
+                </div>
+                <div class="distribution">
+                    <div class="receivingInformation-tit-gy">
+                        <span>配送方式</span><span>修改</span>
+                    </div>
+                    <div class="distribution-inp">
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">配送方式:</label>
+                            <select class="distribution-xl" name="city" lay-verify="">
+                                <option value="">快递</option>
+                                <option value="顺丰">顺丰</option>
+                                <option value="京东">京东</option>
+                                <option value="中通">中通</option>
+                            </select>
+                        </div>
+                        <div class="distribution-btn">确定</div>
+                    </div>
+                </div>
+                <div class="methodPayment">
+                    <div class="receivingInformation-tit-gy">
+                        <span>支付方式</span><span>修改</span>
+                    </div>
+                    <div class="distribution-inp">
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">支付方式:</label>
+                            <select class="distribution-xl" name="city" lay-verify="">
+                                <option value="">在线支付</option>
+                                <option value="顺丰">银联支付</option>
+                                <option value="京东">微信支付</option>
+                                <option value="中通">支付宝支付</option>
+                            </select>
+                        </div>
+                        <div class="methodPayment-btn">确定</div>
+                    </div>
+                </div>
+                <div class="giftList">
+                    <div class="receivingInformation-tit-gy">
+                        <span>礼品清单</span><span></span>
+                    </div>
+                    <div class="giftList-cont">
+                        <div class="giftList-cont-tit">
+                            <span>礼品名称</span>
+                            <span>数量</span>
+                            <span>积分</span>
+                            <span>小计</span>
+                        </div>
+                        <div class="giftList-con-b">
+                            <ul>
+                                <li class="giftList-z">
+                                    <span>199元圣贤卡</span>
+                                    <span>&nbsp;3</span>
+                                    <span>10000</span>
+                                    <span>10000积分</span>
+                                </li>
+                                <li class="giftList-z">
+                                    <span>1999元圣贤卡</span>
+                                    <span>&nbsp;7</span>
+                                    <span>90000</span>
+                                    <span>90000积分</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="computingInformation">
+                    <div class="receivingInformation-tit-gy">
+                        <span>计算信息</span><span></span>
+                    </div>
+                    <div class="computingInformation-con">
+                        <div class="computingInformation-left">
+                            <ul>
+                                <li class="computingInformation-list">
+                                    <span>订单优惠:</span><span>无</span>
+                                </li>
+                                <li class="computingInformation-list">
+                                    <span>使用优惠劵:</span><span>无</span>
+                                </li class="computingInformation-list">
+                                <li class="computingInformation-list">
+                                    <span>积分抵扣:</span><span>10000</span>
+                                </li>
+                                <li class="computingInformation-list">
+                                    <span style="float: left;">订单备注:</span>
+                                    <span>
+                                        <textarea placeholder="请输入内容" class="layui-textarea wby-z"></textarea>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="computingInformation-right">
+                            <div class="computingInformation-z">
+                                <div class="computingInformation-l">
+                                    <span>礼品金额:</span><span><i>¥</i>299</span>
+                                </div>
+                                <div class="computingInformation-d">
+                                    <span>订单可获得积分:</span><span>5000</span>
+                                </div>
+                                <div class="computingInformation-c">
+                                    <span>总金额:</span><span><i>¥</i>299</span>
+                                </div>
+                                <div class="computingInformation-btn">
+                                    <p>提交积分兑换积分</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./js/jquery.min.js"></script>
+<script src="./js/distpicker.data.js"></script>
+<script src="./js/distpicker.js"></script>
+<script src="./js/main.js"></script>
+<script src="./css/layui/layui.js"></script>
+<script src="./css/layui/layui.all.js"></script>
+<script>
+    layui.use(['form', 'layedit', 'laydate'], function () {
+        var form = layui.form
+            , layer = layui.layer
+            , layedit = layui.layedit
+            , laydate = layui.laydate;
+    })
+</script>
+
+</html>
